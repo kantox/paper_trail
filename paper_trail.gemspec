@@ -18,7 +18,8 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency 'activerecord', ['>= 3.0', '< 5.0']
-
+  s.add_dependency 'redis'
+  
   s.add_development_dependency 'rake'
   s.add_development_dependency 'shoulda', '~> 3.5'
   s.add_development_dependency 'ffaker',  '>= 1.15'

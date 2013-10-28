@@ -20,6 +20,10 @@ module PaperTrail
     !!PaperTrail.config.enabled
   end
 
+  def self.redis_enabled?
+    !!PaperTrail.config.redis_enabled
+  end
+
   # Returns `true` if PaperTrail is enabled for the request, `false` otherwise.
   #
   # See `PaperTrail::Controller#paper_trail_enabled_for_controller`.
